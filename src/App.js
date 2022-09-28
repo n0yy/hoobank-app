@@ -18,7 +18,7 @@ function App() {
   }, []);
 
   return (
-      <main className="bg-primary font-poppins px-5 ss:px-24 overflow-hidden">
+      <main className="bg-primary font-poppins px-7 md:px-24 overflow-hidden">
         <Navbar />
         <Hero />
         <Stats />

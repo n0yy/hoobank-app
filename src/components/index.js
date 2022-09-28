@@ -1,5 +1,4 @@
 import Billing from "./Billing";
-import Business from "./Business";
 import CardDeal from "./CardDeal";
 import Features from "./Features";
 import Footer from "./Footer";
@@ -11,7 +10,6 @@ import Stats from "./Stats";
 
 export {
     Billing,
-    Business,
     CardDeal,
     Features,
     Footer,

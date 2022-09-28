@@ -4,8 +4,8 @@ import { styles } from "../style";
 
 export default function Features() {
   return (
-    <section className="mt-40 flex items-center justify-evenly">
-      <div className="font-poppins w-6/12 space-y-5">
+    <section className="mt-40 flex flex-col ss:flex-row items-center justify-evenly">
+      <div className="font-poppins w-full ss:w-6/12 space-y-5">
         <h1 className={styles.title}>
           You do the business, we’ll handle the money.
         </h1>
@@ -19,13 +19,13 @@ export default function Features() {
         </div>
       </div>
 
-      <div className="w-5/12 space-y-5">
+      <div className="w-full ss:w-5/12 space-y-5 mt-10 ss:mt-0">
         {features.map((feature) => (
           <div
             className="flex items-center space-x-3 cursor-pointer hover:scale-105 bg-black-gradient p-3 rounded-lg"
             key={feature.id}
           >
-            <span className="bg-gray-gradient rounded-full p-4">
+            <span className="bg-gray-gradient rounded-full px-2 py-1 ss:px-4 ss:py-3">
               <img src={feature.icon} alt={feature.title} className="w-4 h-4" />
             </span>
             <div className="flex flex-col">
