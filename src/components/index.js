@@ -5,8 +5,9 @@ import Features from "./Features";
 import Footer from "./Footer";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
-import Partner from "./Partner";
+import Clients from "./Clients";
 import Testimonials from "./Testimonials";
+import Stats from "./Stats";
 
 export {
     Billing,
@@ -16,6 +17,7 @@ export {
     Footer,
     Hero,
     Navbar,
-    Partner,
+    Clients,
     Testimonials,
+    Stats
 }

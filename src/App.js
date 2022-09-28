@@ -1,17 +1,32 @@
 import {
   Navbar,
   Hero,
-  Features
+  Features,
+  Billing,
+  CardDeal,
+  Testimonials,
+  Footer,
+  Stats
 } from "./components"
-import Stats from "./components/Stats";
+import { useEffect } from "react";
+
 
 function App() {
+
+  useEffect(() => {
+    document.title = "Hoo Bank"
+  }, []);
+
   return (
-      <main className="bg-primary font-poppins px-5 ss:px-24 h-[3000px] overflow-hidden">
+      <main className="bg-primary font-poppins px-5 ss:px-24 overflow-hidden">
         <Navbar />
         <Hero />
         <Stats />
         <Features />
+        <Billing />
+        <CardDeal />
+        <Testimonials />
+        <Footer />
       </main>
   );
 }
