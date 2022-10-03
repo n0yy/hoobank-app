@@ -19,7 +19,10 @@ export default function Navbar() {
               </a>
             ))}
           </ul>
-          <button onClick={() => setMenuToggle(true)}>
+          <button
+            onClick={() => setMenuToggle(true)}
+            className="ss:hidden block"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
