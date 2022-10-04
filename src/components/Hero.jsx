@@ -5,7 +5,7 @@ import Skeleton from "react-loading-skeleton";
 
 export default function Hero() {
   const [imgLoaded, setImgLoaded] = useState(false);
-
+  console.log(imgLoaded);
   return (
     <section
       id="hero"
@@ -44,7 +44,14 @@ export default function Hero() {
       </div>
 
       <div className="relative mt-10 ss:mt-0 w-full md:w-6/12">
-        {!imgLoaded && <Skeleton width={500} height={400} />}
+        {!imgLoaded && (
+          <Skeleton
+            width={500}
+            height={500}
+            className="ml-0 ss:ml-10"
+            borderRadius={20}
+          />
+        )}
         <img
           src={robot}
           alt="Robot Hand"

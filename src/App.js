@@ -10,6 +10,7 @@ import {
 } from "./components"
 import { useEffect } from "react";
 import { SkeletonTheme } from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css"
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
   }, []);
 
   return (
-    <SkeletonTheme baseColor="#ffffff" highlightColor="#4f4f4f">
+    <SkeletonTheme baseColor="#202020" highlightColor="#444">
       <main className="bg-primary font-poppins px-7 md:px-24 overflow-hidden">
         <Navbar />
         <Hero />
