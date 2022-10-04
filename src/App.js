@@ -19,7 +19,7 @@ function App() {
   }, []);
 
   return (
-    <SkeletonTheme baseColor="#202020" highlightColor="#444">
+    <SkeletonTheme baseColor="#ffffff" highlightColor="#4f4f4f">
       <main className="bg-primary font-poppins px-7 md:px-24 overflow-hidden">
         <Navbar />
         <Hero />

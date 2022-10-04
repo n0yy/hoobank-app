@@ -44,7 +44,7 @@ export default function Hero() {
       </div>
 
       <div className="relative mt-10 ss:mt-0 w-full md:w-6/12">
-        {!imgLoaded && <Skeleton width={500} />}
+        {!imgLoaded && <Skeleton width={500} height={400} />}
         <img
           src={robot}
           alt="Robot Hand"
