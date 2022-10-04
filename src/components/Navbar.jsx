@@ -14,7 +14,7 @@ export default function Navbar() {
         <div className="text-dimWhite">
           <ul className="hidden ss:flex space-x-10 text-sm font-thin">
             {navLinks.map((link) => (
-              <a href={`#${link.id}`}>
+              <a href={`#${link.id}`} key={link.id}>
                 <li key={link.id}>{link.title}</li>
               </a>
             ))}
@@ -68,7 +68,7 @@ export default function Navbar() {
         </div>
         <ul className="space-x-10 text-sm font-thin">
           {navLinks.map((link) => (
-            <a href={`#${link.id}`}>
+            <a href={`#${link.id}`} key={link.id}>
               <li key={link.id}>{link.title}</li>
             </a>
           ))}

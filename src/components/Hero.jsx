@@ -1,7 +1,11 @@
 import { discount, robot } from "../assets";
 import GetStartedButton from "./GetStartedButton";
+import { useState } from "react";
+import Skeleton from "react-loading-skeleton";
 
 export default function Hero() {
+  const [imgLoaded, setImgLoaded] = useState(false);
+
   return (
     <section
       id="hero"
@@ -40,7 +44,13 @@ export default function Hero() {
       </div>
 
       <div className="relative mt-10 ss:mt-0 w-full md:w-6/12">
-        <img src={robot} alt="Robot Hand" className="w-[500px]" />
+        {!imgLoaded && <Skeleton width={500} />}
+        <img
+          src={robot}
+          alt="Robot Hand"
+          className="w-[500px] ml-0 ss:ml-10"
+          onLoad={() => setImgLoaded(true)}
+        />
         <div className="absolute w-[500px] h-[500px] bg-pink-400/20 -top-10  left-28 rounded-full blur-3xl"></div>
         <div className="absolute w-[400px] h-[400px] bg-sky-400/20 -bottom-20 left-0 rounded-full blur-3xl"></div>
       </div>

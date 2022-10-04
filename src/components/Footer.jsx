@@ -34,8 +34,8 @@ export default function Footer() {
                 {footerLink.title}
               </h3>
               <ul className="space-y-2">
-                {footerLink.links.map((link) => (
-                  <li className="text-dimWhite text-xs">
+                {footerLink.links.map((link, index) => (
+                  <li className="text-dimWhite text-xs" key={index}>
                     <a href={link.link}>{link.name}</a>
                   </li>
                 ))}

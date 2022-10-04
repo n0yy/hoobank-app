@@ -9,6 +9,7 @@ import {
   Stats
 } from "./components"
 import { useEffect } from "react";
+import { SkeletonTheme } from "react-loading-skeleton";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
   }, []);
 
   return (
+    <SkeletonTheme baseColor="#202020" highlightColor="#444">
       <main className="bg-primary font-poppins px-7 md:px-24 overflow-hidden">
         <Navbar />
         <Hero />
@@ -28,6 +30,7 @@ function App() {
         <Testimonials />
         <Footer />
       </main>
+    </SkeletonTheme>
   );
 }
 
